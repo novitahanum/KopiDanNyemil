@@ -35,42 +35,26 @@ Aplikasi pemesanan kopi dan camilan sederhana untuk tugas Pemrograman Mobile. Pr
 - Gradle: 9.5.0
 - Tidak membutuhkan database maupun API internet.
 
-## Cara memasukkan project ke Android Studio
+## Screenshot Aplikasi
 
-Paket ini berisi source code dan file konfigurasi project. Untuk memastikan Gradle Wrapper yang dibuat oleh Android Studio tetap tersedia, ikuti panduan pada [`PANDUAN_STEP_BY_STEP.md`](PANDUAN_STEP_BY_STEP.md): buat project **Empty Views Activity** terlebih dahulu, lalu salin file dari paket ini ke project tersebut. Setelah itu pasang Android SDK Platform 36, lakukan Gradle Sync, pilih emulator/HP, dan tekan **Run ▶**.
+### Splash Screen
+![Splash Screen](screenshots/splash_screen.jpeg)
 
-## Catatan simulasi
+### Login
+![Login](screenshots/login.jpeg)
 
-- Karena tugas tidak meminta database, akun dan keranjang tidak tersimpan setelah aplikasi ditutup.
-- Untuk akun yang baru didaftarkan pada sesi aplikasi yang sama, gunakan username dan password yang sama saat login.
-- Untuk demonstrasi login tanpa register, isi username dan password apa saja (tidak boleh kosong). Ini hanya simulasi, bukan autentikasi sungguhan.
-- Pesanan hanya menghasilkan halaman konfirmasi di dalam aplikasi. Tidak ada pembayaran atau pengiriman sungguhan.
-- Screenshot aplikasi dapat dimasukkan ke folder `screenshots/`, lalu ditautkan di bagian dokumentasi ini.
+### Register
+![Register](screenshots/regiter.jpeg)
 
-## Screenshot aplikasi
+### Beranda
+![Beranda](screenshots/beranda.jpeg)
 
-Tambahkan hasil screenshot emulator/HP ke folder `screenshots/`. Contoh format penyisipan gambar:
+### Keranjang
+![Keranjang](screenshots/keranjang.jpeg)
 
-```md
-![Halaman Home](screenshots/home.png)
-![Halaman Order](screenshots/order.png)
-![Halaman Konfirmasi](screenshots/confirmation.png)
-```
+### Konfirmasi Pesanan
+![Konfirmasi Pesanan](screenshots/konfirmasi_pesanan.jpeg)
 
-## Struktur project
+### Profil
+![Profil](screenshots/profil.jpeg)
 
-```text
-KopiDanNyemil/
-├── app/
-│   └── src/main/
-│       ├── java/com/example/kopidannyemil/MainActivity.kt
-│       ├── res/values/styles.xml
-│       └── AndroidManifest.xml
-├── gradle/wrapper/gradle-wrapper.properties
-├── .gitignore
-├── build.gradle.kts
-├── settings.gradle.kts
-├── gradle.properties
-├── README.md
-└── PANDUAN_STEP_BY_STEP.md
-```
